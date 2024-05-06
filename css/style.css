@@ -183,7 +183,8 @@ body{
     grid-area: table__colum__2;
 }
 .footer {
-    background: coral;
+    background: var(--color--one);
+    border-radius: 2em 2em 0em 0em;
     grid-area: section__footer;
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
@@ -202,8 +203,14 @@ body{
 .footer ul li a{
     text-decoration: none;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
+.footer ul li a p{
+    text-decoration: none;
+    color: var(--color--five);
+}
+
 .nav__information{
     /* background: red; */
     grid-area: nav__2;
