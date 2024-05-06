@@ -1,11 +1,11 @@
 :root{
     --color--one: #14162C;
-    --color--one--rgba: #191b3fdf;
-    --color--two: #9499c3;
+    --color--one--rgba: rgba(25, 27, 63, 0.875);
+    --color--two: rgb(148, 153, 195);
     --color--three: #298bfe;
     --color--four: #e52d2d;
     --color--five: #ffffff;
-    --color--six: #ffd733;
+    --color--six: rgb(255, 215, 51);
 
     --layout-description-container-x: 10px;
     --layout-description-container-y: 10px;
