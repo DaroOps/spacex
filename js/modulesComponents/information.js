@@ -8,7 +8,7 @@ export const informationRockets = async(country, description)=>{
     
     let divLast = document.createElement('div');
     let h3 = document.createElement('h3');
-    h3.textContent = country
+    h3.textContent = `Build in ${country}`
     let small = document.createElement('small');
     small.textContent = description
     divLast.append(h3, small);
@@ -37,7 +37,7 @@ export const informationLaunchCostRocket = async(cost_per_launch)=>{
     
     let divLast = document.createElement('div');
     let h3 = document.createElement('h3');
-    h3.textContent = "The estimated cost per rocket launch"
+    h3.textContent = "Cost per rocket launch "
     let small = document.createElement('small');
     let money = new Intl.NumberFormat('cop').format(cost_per_launch)
     small.textContent = `$ ${money}`
@@ -67,7 +67,7 @@ export const informationFirstFlightRocket = async(first_flight)=>{
     
     let divLast = document.createElement('div');
     let h3 = document.createElement('h3');
-    h3.textContent = "The date of the first flight of the rocket"
+    h3.textContent = "First flight on"
     let small = document.createElement('small');
     small.textContent = first_flight
     divLast.append(h3, small);
@@ -96,7 +96,7 @@ export const informationWebRocket = async(wikipedia)=>{
     
     let divLast = document.createElement('div');
     let h3 = document.createElement('h3');
-    h3.textContent = "Read more about the coete"
+    h3.textContent = "Read more about the rocket"
     let a = document.createElement('a');
     a.setAttribute("href", wikipedia)
     a.setAttribute("target", "_blank")
