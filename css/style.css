@@ -99,7 +99,7 @@ body{
 .section__information__1 > .carousel__item {
     /* flex: 1; */
     min-width: 24%;
-    background-color: purple;
+
 }
 .section__information__container{
     /* background: #d9ff00; */
@@ -129,7 +129,7 @@ body{
 .section__information__2 div:first-child > .carousel__item {
     /* flex: 1; */
     min-width: 48%;
-    background-color: purple;
+ 
 }
 .section__information__2 div:last-child{
     /* background: darkblue; */
@@ -176,7 +176,7 @@ body{
 .section__information__3 div:first-child > .carousel__item {
     /* flex: 1; */
     min-width: 48%;
-    background-color: purple;
+
 }
 .section__information__3 div:last-child{
     /* background: darkblue; */
@@ -228,13 +228,20 @@ body{
     height: 110px;
 }
 .buttom__paginacion {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 .buttom__paginacion a {
     color: var(--color--five);
     text-decoration: none;
     float: left;
-    padding: 8px 16px;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    align-content: center;
+    text-align: center;
+    /* padding: 8px 16px; */
 }
 .buttom__paginacion a.activo {
     background-color: var(--color--one);
@@ -298,6 +305,10 @@ progress[value]::-webkit-progress-value {
 progress[value]::-moz-progress-bar {
     border-radius: 10em;
     background: var(--color);
+}
+
+.pagImgage{
+    max-width: 50px;
 }
     /* .img_patch{
         max-width: 3em;
